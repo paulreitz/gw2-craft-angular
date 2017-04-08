@@ -1,0 +1,107 @@
+@import "themes/default";
+@import "themes/grayscale";
+
+.theme(@theme: default) {
+    @font-name: "@{theme}-font-name";
+    @font-size: "@{theme}-font-size";
+    @background-dark: "@{theme}-background-dark";
+    @background-medium: "@{theme}-background-medium";
+    @background-light: "@{theme}-background-light";
+    @text-dark: "@{theme}-text-dark";
+    @text-light: "@{theme}-text-light";
+
+    @junk-color: "@{theme}-rarity-junk";
+    @basic-color: "@{theme}-rarity-basic";
+    @fine-color: "@{theme}-rarity-fine";
+    @masterwork-color: "@{theme}-rarity-masterwork";
+    @rare-color: "@{theme}-rarity-rare";
+    @exotic-color: "@{theme}-rarity-exotic";
+    @ascended-color: "@{theme}-rarity-ascended";
+    @legendary-color: "@{theme}-rarity-legendary";
+
+    .@{theme} & {
+        font-family: @@font-name;
+        font-size: @@font-size;
+
+        .dark-background {
+            background-color: @@background-dark;
+        }
+
+        .medium-background {
+            background-color: @@background-medium;
+        }
+
+        .light-background {
+            background-color: @@background-light;
+        }
+
+        .dark-text {
+            color: @@text-dark;
+        }
+
+        .light-text {
+            color: @@text-light;
+        }
+
+        .dark-link-text {
+            color: @@text-dark;
+        }
+
+        div[role='button'] {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            background-color: @@background-dark;
+            color: @@text-light;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        [aria-disabled] {
+            opacity: 0.5;
+            cursor: not-allowed !important;
+        }
+
+        .spinner-dark {
+            border: 16px solid @@background-medium;
+            border-top: 16px solid @@background-dark;
+        }
+
+        .junk {
+            border-color: @@junk-color !important;
+        }
+
+        .basic {
+            border-color: @@basic-color !important;
+        }
+
+        .fine {
+            border-color: @@fine-color !important;
+        }
+
+        .masterwork {
+            border-color: @@masterwork-color !important;
+        }
+
+        .rare {
+            border-color: @@rare-color !important;
+        }
+
+        .exotic {
+            border-color: @@exotic-color !important;
+        }
+
+        .ascended {
+            border-color: @@ascended-color !important;
+        }
+
+        .legendary {
+            border-color: @@legendary-color !important;
+        }
+    }
+}
+
+.theme();
+.theme(grayscale);
+
+

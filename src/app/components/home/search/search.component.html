@@ -1,0 +1,22 @@
+<div class="search-form">
+  <span class="label">{{filterLabel}}</span>
+  <form #f="ngForm" novalidate>
+    <label for="type">{{typeLabel}}</label>
+    <select name="type" [(ngModel)]="searchParams.type" (change)="setSubType()">
+      <option *ngFor="let type of types" [value]="type.value">{{type.type}}</option>
+    </select>
+    <label for="subType">{{subTypeLabel}}</label>
+    <select name="subType" [(ngModel)]="searchParams.subType">
+      <option *ngFor="let subType of subTypes" [value]="subType.value">{{subType.type}}</option>
+    </select>
+    <label for="rarity">{{rarityLabel}}</label>
+    <select name="rarity" [(ngModel)]="searchParams.rarity">
+      <option *ngFor="let rarity of rarities" [value]="rarity.value">{{rarity.type}}</option>
+    </select>
+    <label for="level">{{levelLabel}}</label>
+    <select name="level" [(ngModel)]="searchParams.level">
+      <option *ngFor="let level of levels" [value]="level">{{level}}</option>
+    </select>
+    <div role="button" (click)="doSearch()">{{searchLabel}}</div>
+  </form>
+</div>

@@ -1,0 +1,15 @@
+<div class="list-wrapper dark-border">
+  <ul class="list" *ngIf="itemList.length">
+    <li *ngFor="let item of itemList" [class]="item.item.rarity.toLowerCase()">
+      <a target="_bland" [href]="getWikiLink(item.item)">
+        <div class="image-container container">
+          <img src="{{item.item.icon}}" width="32" height="32"/>
+        </div>
+        <div class="info-container container dark-text">
+          <div class="info-name">{{item.item.name}}</div>
+          <div class="info-count">{{item.count}}</div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

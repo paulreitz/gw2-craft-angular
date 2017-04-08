@@ -1,0 +1,15 @@
+<div class="container">
+  <div *ngIf="isSearching" class="searching">
+    <div class="spinner spinner-dark spinner-large"></div>
+  </div>
+  <div *ngIf="!isSearching">
+    <div *ngIf="items.length">
+      <div class="item" *ngFor="let item of items">
+        <app-tile [item]='item'></app-tile>
+      </div>
+    </div>
+    <div *ngIf="!items.length" class="empty-search-container">
+      <div class="empty-search dark-text">{{emptySearchResults}}</div>
+    </div>
+  </div>
+</div>

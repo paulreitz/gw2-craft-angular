@@ -1,0 +1,12 @@
+<div class="item-tile" *ngIf="item" [ngClass]="cssClass" (click)="showDiagram()">
+  <div class="item-container">
+    <div class="image-container container">
+      <img src="{{item.icon}}" width="64px" height="64px" />
+    </div>
+    <div class="info-container container dark-text">
+      <div class="info-name">{{name}}</div>
+      <div class="info-rarity">{{item.rarity}}</div>
+      <div class="info-level">Level {{item.level}}</div>
+    </div>
+  </div>
+</div>

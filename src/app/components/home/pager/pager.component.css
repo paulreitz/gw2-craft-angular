@@ -1,0 +1,27 @@
+#pager {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+.pager-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.pager {
+    float: left;
+    margin: 15px 10px;
+}
+
+.page div {
+    display: inline-block;
+    padding: 5px !important;
+}
+
+.items {
+    float: right;
+    padding: 20px 10px;
+}

@@ -1,0 +1,17 @@
+.app-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.app-header .title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-left: 20px;
+}
+
+.app-header app-navigation {
+    float: right;
+}

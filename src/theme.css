@@ -1,0 +1,126 @@
+.default  {
+  font-family: "Arial";
+  font-size: 14px;
+}
+.default  .dark-background {
+  background-color: #210636;
+}
+.default  .medium-background {
+  background-color: #6A67CC;
+}
+.default  .light-background {
+  background-color: #FCF8ED;
+}
+.default  .dark-text {
+  color: #210636;
+}
+.default  .light-text {
+  color: #FCF8ED;
+}
+.default  .dark-link-text {
+  color: #210636;
+}
+.default  div[role='button'] {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: #210636;
+  color: #FCF8ED;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.default  [aria-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+.default  .spinner-dark {
+  border: 16px solid #6A67CC;
+  border-top: 16px solid #210636;
+}
+.default  .junk {
+  border-color: #AAA !important;
+}
+.default  .basic {
+  border-color: #000 !important;
+}
+.default  .fine {
+  border-color: #62A4DA !important;
+}
+.default  .masterwork {
+  border-color: #1A9306 !important;
+}
+.default  .rare {
+  border-color: #FCD00B !important;
+}
+.default  .exotic {
+  border-color: #FFA405 !important;
+}
+.default  .ascended {
+  border-color: #FB3E8D !important;
+}
+.default  .legendary {
+  border-color: #4C139D !important;
+}
+.grayscale  {
+  font-family: "Arial";
+  font-size: 14px;
+}
+.grayscale  .dark-background {
+  background-color: #363636;
+}
+.grayscale  .medium-background {
+  background-color: #cccccc;
+}
+.grayscale  .light-background {
+  background-color: #fcfcfc;
+}
+.grayscale  .dark-text {
+  color: #363636;
+}
+.grayscale  .light-text {
+  color: #fcfcfc;
+}
+.grayscale  .dark-link-text {
+  color: #363636;
+}
+.grayscale  div[role='button'] {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: #363636;
+  color: #fcfcfc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.grayscale  [aria-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+.grayscale  .spinner-dark {
+  border: 16px solid #cccccc;
+  border-top: 16px solid #363636;
+}
+.grayscale  .junk {
+  border-color: #AAA !important;
+}
+.grayscale  .basic {
+  border-color: #000 !important;
+}
+.grayscale  .fine {
+  border-color: #d9d9d9 !important;
+}
+.grayscale  .masterwork {
+  border-color: #949494 !important;
+}
+.grayscale  .rare {
+  border-color: #fcfcfc !important;
+}
+.grayscale  .exotic {
+  border-color: #ffffff !important;
+}
+.grayscale  .ascended {
+  border-color: #fafafa !important;
+}
+.grayscale  .legendary {
+  border-color: #9e9e9e !important;
+}

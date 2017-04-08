@@ -1,0 +1,13 @@
+<div id="diagram">
+  <div *ngIf="isSearching" class="spinner-wrapper">
+    <div class="spinner spinner-large spinner-dark"></div>
+  </div>
+  <div *ngIf="!isSearching">
+    <article>
+      <app-tree></app-tree>
+    </article>
+    <aside>
+      <app-list></app-list>
+    </aside>
+  </div>
+</div>

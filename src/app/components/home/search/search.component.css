@@ -1,0 +1,28 @@
+.search-form {
+    margin: 10px;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+form label:after {
+    content: ":";
+}
+
+form select {
+    display: block;
+    margin-bottom: 8px;
+    width: 150px;
+}
+
+div {
+    margin-top: 5px;
+}

@@ -1,0 +1,9 @@
+nav {
+    margin-right: 20px;
+}
+
+a {
+    margin: 10px 5px;
+    line-height: 3rem;
+    text-transform: uppercase;
+}

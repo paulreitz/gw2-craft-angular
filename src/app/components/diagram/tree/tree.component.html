@@ -1,0 +1,10 @@
+<div id="tree-display" *ngIf="root">
+  <div class="label dark-text dark-border">{{label}}</div>
+  <div id="tree-wrapper">
+    <div id="tree-canvas" 
+      [style.width.px]="containerWidth" 
+      [style.height.px]="containerHeight"
+      draggable="true"
+    ></div>
+  </div>
+</div>

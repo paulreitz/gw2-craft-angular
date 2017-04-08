@@ -1,0 +1,14 @@
+<div id="pager">
+  <div class="pager-wrapper" *ngIf="showPager">
+    <div class="pager">
+      <div role="button" [attr.aria-disabled]="isFirstPage? true : null" (click)="firstPage()">&lt;&lt;</div>
+      <div role="button" [attr.aria-disabled]="isFirstPage? true : null" (click)="previousPage()">&lt;</div>
+      <div *ngFor="let page of pages" role="button" [attr.aria-disabled]="isCurrentPage(page)? true : null" (click)="pageSelected(page)">{{page}}</div>
+      <div role="button" [attr.aria-disabled]="isLastPage? true : null" (click)="nextPage()">&gt;</div>
+      <div role="button" [attr.aria-disabled]="isLastPage? true : null" (click)="lastPage()">&gt;&gt;</div>
+    </div>
+    <div class="items dark-text">
+      {{itemsLabel}}
+    </div>
+  </div>
+</div>

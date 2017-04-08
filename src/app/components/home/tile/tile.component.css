@@ -1,0 +1,37 @@
+.item-tile {
+    position: relative;
+    border: 2px solid;
+    height: 64px;
+    width: 100%;
+}
+
+.item-container {
+    position: relative;
+    height: 64px;
+}
+
+.container {
+    position:absolute;
+    height: 64px;
+}
+
+.image-container {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    right: 64px;
+}
+
+.info-container {
+    top: 0;
+    left: 68px;
+}
+
+.info-name {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 280px;
+}
+
